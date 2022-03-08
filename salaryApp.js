@@ -88,7 +88,7 @@ function addRecordHandler() {
     return;
   }
 
-  addRecord(name, !salary);
+  addRecord(name, salary);
 }
 
 function addRecord(name, salary) {
@@ -101,8 +101,7 @@ function addRecord(name, salary) {
 
 function getRecord(name, salary) {
   const newItem = {
-    name: name,
-    salary: salary,
+    name, salary
   };
 
   return newItem;
@@ -115,7 +114,7 @@ function secondHandler(e) {
 const showLastItem = function () {
   const items = salary_data;
   let lastKey;
-  for (const key in items){
+  for (const key in items) {
     lastKey = key;
   };
   const lastItem = items[lastKey];
