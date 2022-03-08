@@ -135,6 +135,7 @@ const displayLastItemDialog = function (lastItem) {
   document.getElementById("showSalary").innerText = d3.format(",.0f")(
     lastItem.salary
   );
+  // can't figure out it's functionality 
   dlg.dialog({
     buttons: {
       Ok: function () {
@@ -150,7 +151,7 @@ var showDataError = function (name, salary) {
 
   toggleErrorMessage("newName", name, "Who the hell you are talking about!");
   toggleErrorMessage("newSalary", salary, "How much that guy make!");
-
+  // can't figure out it's functionality 
   dlg.dialog({
     width: 600,
     buttons: {
@@ -176,7 +177,7 @@ const showRecordCount = function (data) {
   dlg.classList.remove("hide");
 
   document.getElementById("numberOfRecords").innerText = data.length;
-
+  // can't figure out it's functionality 
   dlg.dialog({
     buttons: {
       Ok: function () {
