@@ -85,6 +85,8 @@ function addRecordHandler() {
 
   if (!name || !salary) {
     showDataError(name, salary);
+    document.getElementById("name").value = '';
+    document.getElementById("salary").value = '';
     return;
   }
 
